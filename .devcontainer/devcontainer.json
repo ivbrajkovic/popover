@@ -66,5 +66,5 @@
 
   // Set container name
   // "runArgs": ["--name", "popover", "-p", "5173:5173"] // expose port 3000 on local network
-  "runArgs": ["--name", "popover"]
+  "runArgs": ["--network", "host", "--name", "popover"]
 }
