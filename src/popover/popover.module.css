@@ -1,0 +1,70 @@
+.popoverContainer {
+  /* position: relative; */
+}
+
+.popoverTarget {
+  cursor: pointer;
+
+  anchor-name: --my-anchor-positioning;
+}
+
+.popover {
+  position: absolute;
+  margin: 0;
+  inset: auto;
+
+  position-anchor: --my-anchor-positioning;
+  top: anchor(bottom);
+  right: anchor(right);
+
+  margin-block-start: 40px;
+
+  padding: 0;
+  /* border: 0; */
+
+  background: #646cff;
+}
+
+.popover:popover-open {
+  /* position: absolute;
+  margin: 0;
+  inset: auto; */
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background-color: #3f3f3f;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* #anchor {
+  anchor-name: --my-anchor-positioning;
+} 
+*/
+
+/* #popover {
+  margin: 0;
+  padding: 0;
+  inset: auto;
+  border: 0;
+
+  position: absolute;
+  top: anchor(--my-anchor-positioning bottom);
+  left: anchor(--my-anchor-positioning left);
+
+  background: #646cff;
+} */
